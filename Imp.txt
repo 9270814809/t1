@@ -1,0 +1,64 @@
+Git
+
+first step:
+make the dir as working dir
+
+git init
+
+second step:
+configure every developers.
+
+git config --global user.name "hemanth kumar"
+git config --global user.email "hemanth@gmail.com"
+
+
+git config --global --list
+
+git status
+
+git add filename
+
+git rm --cached file
+
+git commit -m "first commit"
+
+git rebase:
+
+goto child branch do rebase
+git rebase master
+child branch latest commit refelcted to master
+git merge master
+no extra commit we dont get it
+
+replace/change commit position if you have 5 commit
+git rebase -i HEAD~4
+
+if you want delete perticular commit then use
+git rebase -i HEAD~4
+replace pick with squash
+
+child branch should on top
+replacement
+rearrange
+
+merge vs rebase
+no extra commit in rebase
+child brach commit reflected in top of master branch
+
+cherrypick:
+
+if you dont want do any perticular commit in git use cherrypick
+git cherry-pick id 
+
+Stash: Hiding
+when i have some unfinished work and you dont want to make it commit or dont want to
+save in local commit and dont want finished this code and want work on another repo or code
+we storing our work enviorment in another place
+git stash-> to stash stagged file
+git stash -u-> to stash staged ans untracked file
+git stash pop -> again shows that file
+
+
+Amend:
+recent work if you done any minor changes and if you want to merge this in previous commit
+we can also change commitid
